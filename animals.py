@@ -12,37 +12,41 @@ class Griffin:
 
 class Yeti:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
 class Bigfoot:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
 class T_Rex:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
 class Raptor:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
@@ -93,10 +97,11 @@ class Loch_Ness:
 
 class Werewolf:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift):
         self.name = name
         self.species = species
         self.date_added = date.today()
+        self.shift = shift
         self.walking = True
 
 
@@ -136,20 +141,20 @@ class Kraken:
         self.swimming = True
 
 
-vampy = Vampire("vampy", "hybrid")
-krakey = Kraken("krakey", "squid")
-yetti = Yeti("yetti", "unknown")
-biggy = Bigfoot("biggy", "unknown")
-basie = Basilisk("basie", "serpent")
-draggy = Dragon("draggy", "serpent")
-pterry = Pterodactyl("pterry", "dinosaur")
-wolfy = Werewolf("wolfy", "canine")
-rexxy = T_Rex("rexxy", "dinosaur")
-rapty = Raptor("rapty", "dinosaur")
-nessy = Loch_Ness("nessy", "serpent")
-meggy = Megalodon("meggy", "shark")
-zappy = Zapdos("zappy", "bird")
-cthuly = Cthulhu("cthuly", "hybrid")
-griffy = Griffin("griffy", "hybrid")
+vampy = Vampire("Vampy", "hybrid")
+krakey = Kraken("Krakey", "squid")
+yetti = Yeti("Yetti", "unknown", "morning")
+biggy = Bigfoot("Biggy", "unknown", "morning")
+basie = Basilisk("Basie", "serpent")
+draggy = Dragon("Draggy", "serpent")
+pterry = Pterodactyl("Pterry", "dinosaur")
+wolfy = Werewolf("Wolfy", "canine", "night")
+rexxy = T_Rex("Rexxy", "dinosaur", "midday")
+rapty = Raptor("Rapty", "dinosaur", "midday")
+nessy = Loch_Ness("Nessy", "serpent")
+meggy = Megalodon("Meggy", "shark")
+zappy = Zapdos("Zappy", "bird")
+cthuly = Cthulhu("Cthuly", "hybrid")
+griffy = Griffin("Griffy", "hybrid")
 
-print(rexxy)
+print(f"{rexxy.name} the {rexxy.species} is available to pet during the {rexxy.shift} shift.")
