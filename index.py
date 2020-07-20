@@ -22,7 +22,7 @@ cthuly = Creature("Cthuly", "cthulhu god", "souls of the damned", 14)
 griffy = Creature("Griffy", "griffin", "vermin", 15)
 
 print(
-    f"{rexxy.chip_num} the {rexxy.species} is available to pet during the {rexxy.shift['shift']} shift.")
+    f"{rexxy.name} the {rexxy.species} is available to pet during the {rexxy.shift['shift']} shift.")
 griffy.feed()
 rexxy.feed()
 
@@ -41,3 +41,5 @@ for creature in woodlands.animals:
 print(f"The {seaside.name} is where you'll find creatures that reside in the depths, like")
 for creature in seaside.animals:
     print(f"    * {creature}")
+
+print(aviary.last_creature_added)

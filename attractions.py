@@ -8,6 +8,9 @@ class Attraction:
         for animal in animals:
             self.animals.append(animal)
 
+    @property
+    def last_creature_added(self):
+        return self.animals[-1]
 
 # class Seaside:
 
