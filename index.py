@@ -1,25 +1,25 @@
 from attractions import Attraction
-from beasts import Creature
+from beasts import AirCreature, WaterCreature, LandCreature
 
 aviary = Attraction("Aviary", "a cliff face to watch the beasts fly.")
 woodlands = Attraction("Woodlands", "a tranquil forest where the beasts roam.")
 seaside = Attraction("Seaside", "a glass submarine to see the sea creatures.")
 
-vampy = Creature("Vampy", "vampire", "blood", 1)
-krakey = Creature("Krakey", "kraken", "serpents", 2)
-yetti = Creature("Yetti", "yeti", "snowcones", 3, shift="morning")
-biggy = Creature("Biggy", "bigfoot", "bearclaws", 4, shift="morning")
-basie = Creature("Basie", "basilisk", "critters", 5)
-draggy = Creature("Draggy", "dragon", "roasted humans", 6)
-pterry = Creature("Pterry", "pterodactyl", "vermin", 7)
-wolfy = Creature("Wolfy", "werewolf", "raw beef", 8, shift="night")
-rexxy = Creature("Rexxy", "t-rex", "sheep", 9, shift="midday")
-rapty = Creature("Rapty", "raptor", "deer", 10, shift="midday")
-nessy = Creature("Nessy", "loch ness monster", "fish", 11,)
-meggy = Creature("Meggy", "megalodon", "orca", 12)
-zappy = Creature("Zappy", "zapdos", "berries", 13)
-cthuly = Creature("Cthuly", "cthulhu god", "souls of the damned", 14)
-griffy = Creature("Griffy", "griffin", "vermin", 15)
+vampy = AirCreature("Vampy", "vampire", "human", 1)
+krakey = WaterCreature("Krakey", "kraken", "serpents", 2)
+yetti = LandCreature("Yetti", "yeti", "snowcones", 3, shift="morning")
+biggy = LandCreature("Biggy", "bigfoot", "bearclaws", 4, shift="morning")
+basie = WaterCreature("Basie", "basilisk", "fish", 5)
+draggy = AirCreature("Draggy", "dragon", "roasted humans", 6)
+pterry = AirCreature("Pterry", "pterodactyl", "vermin", 7)
+wolfy = LandCreature("Wolfy", "werewolf", "cow", 8, shift="night")
+rexxy = LandCreature("Rexxy", "t-rex", "sheep", 9, shift="midday")
+rapty = LandCreature("Rapty", "raptor", "deer", 10, shift="midday")
+nessy = WaterCreature("Nessy", "loch ness monster", "fish", 11,)
+meggy = WaterCreature("Meggy", "megalodon", "orca", 12)
+zappy = AirCreature("Zappy", "zapdos", "berries", 13)
+cthuly = WaterCreature("Cthuly", "cthulhu god", "souls of the damned", 14)
+griffy = AirCreature("Griffy", "griffin", "vermin", 15)
 
 print(
     f"{rexxy.name} the {rexxy.species} is available to pet during the {rexxy.shift['shift']} shift.")
