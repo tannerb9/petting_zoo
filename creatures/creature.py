@@ -26,33 +26,33 @@ class Creature:
         return f"{self.name} is a {self.species}."
 
 
-class AirCreature(Creature):
+# class AirCreature(Creature):
 
-    def __init__(self, name, species, food, chip_num, **shift):
-        super().__init__(name, species, food, chip_num, **shift)
-        self.flying = True
+#     def __init__(self, name, species, food, chip_num, **shift):
+#         super().__init__(name, species, food, chip_num, **shift)
+#         self.flying = True
 
-    def feed(self):
-        print(
-            f"{self.name} swooped through the air to catch the {self.food} for their meal on {date.today()}.")
-
-
-class WaterCreature(Creature):
-
-    def __init__(self, name, species, food, chip_num, **shift):
-        super().__init__(name, species, food, chip_num, **shift)
-        self.swimming = True
-
-    def feed(self):
-        print(f"{self.name} tossed their {self.food} into the air for fun before devouring it on {date.today()}.")
+#     def feed(self):
+#         print(
+#             f"{self.name} swooped through the air to catch the {self.food} for their meal on {date.today()}.")
 
 
-class LandCreature(Creature):
+# class WaterCreature(Creature):
 
-    def __init__(self, name, species, food, chip_num, **shift):
-        super().__init__(name, species, food, chip_num, **shift)
-        self.walking = True
+#     def __init__(self, name, species, food, chip_num, **shift):
+#         super().__init__(name, species, food, chip_num, **shift)
+#         self.swimming = True
 
-    def feed(self):
-        print(
-            f"{self.name} frightened the {self.food} so they could chase it down on {date.today()}.")
+#     def feed(self):
+#         print(f"{self.name} tossed their {self.food} into the air for fun before devouring it on {date.today()}.")
+
+
+# class LandCreature(Creature):
+
+#     def __init__(self, name, species, food, chip_num, **shift):
+#         super().__init__(name, species, food, chip_num, **shift)
+#         self.walking = True
+
+#     def feed(self):
+#         print(
+#             f"{self.name} frightened the {self.food} so they could chase it down on {date.today()}.")

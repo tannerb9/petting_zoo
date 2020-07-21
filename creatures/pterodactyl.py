@@ -1,17 +1,16 @@
 from datetime import date
+from .creature import Creature
+from movements.flying import Flying
 
 
-class Pterodactyl:
+class Pterodactyl(Creature, Flying):
 
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.flying = True
-        self.food = food
+    def __init__(self, name, species, food, chip_num, **shift):
+        Creature.__init__(self, name, species, food, chip_num, **shift)
+        Flying.__init__(self)
 
     def feed(self):
-        print(f"{self.name} was fed {self.food} on {date.today()}.")
+        print(f"{self.name} swooped through the air to catch the {self.food} for their meal on {date.today()}.")
 
     def __str__(self):
-        return f"{self.name} is a {self.species}."
+        return f"{self.name}, the {self.species}."

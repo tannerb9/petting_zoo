@@ -1,17 +1,16 @@
 from datetime import date
+from .creature import Creature
+from movements.swimming import Swimming
 
 
-class Megalodon:
+class Megalodon(Creature, Swimming):
 
-    def __init__(self, name, species, food):
-        self.name = name
-        self.species = species
-        self.date_added = date.today()
-        self.swimming = True
-        self.food = food
+    def __init__(self, name, species, food, chip_num, **shift):
+        Creature.__init__(self, name, species, food, chip_num, **shift)
+        Swimming.__init__(self)
 
     def feed(self):
-        print(f"{self.name} was fed {self.food} on {date.today()}.")
+        print(f"{self.name} tossed their {self.food} into the air for fun before devouring it on {date.today()}.")
 
     def __str__(self):
-        return f"{self.name} is a {self.species}."
+        return f"{self.name}, the {self.species}."
