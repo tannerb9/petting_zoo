@@ -57,3 +57,6 @@ for creature in seaside.animals:
     print(f"    * {creature}")
 
 print(aviary.last_creature_added)
+woodlands.add_creature_type_check(nessy)
+aviary.add_creature_type_check(biggy)
+seaside.add_creature_type_check(rapty)
